@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Home from './components/Home'
+import Decentralized from "./components/Decentralized";
+import Built from "./components/Built";
+import Avalanche from "./components/Avalanche";
+import Subscribe from "./components/Subscribe";
+import Footer from "./components/Footer";
+import Marketplace from "./components/Marketplace";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Home />
+      <Marketplace />
+      <Decentralized />
+      <Built />
+      <Avalanche />
+      <Subscribe />
+      <Footer />
     </div>
   );
 }
